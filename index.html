@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <main>
+      
+     <h1> Conversor de unidades</h1>
+      <img src="WhatsApp_Image_2024-05-08_at_16.12.09-removebg-preview.png" alt="logo-nutriz">
+        <div class="div_grande">  
+
+          <div class="temperatura">
+            <p class="titulo-temperatura">Temperatura</p>
+             <p class="selecionar-temperatura">Selecione a unidade de  temperatura</p>
+               <div class="botoes-temperatura">
+                <select class="select-temp" name="select" id="select-temp">
+                <option  id="celsius" value="celsius">celsius(°C)</option>
+                <option id="fahreinheit" value="fahreinheit">Fahreinheit(°F)</option>
+                </select> 
+                <input  id="input-valor-temp" placeholder="Valor">
+             <button onclick="calcularUnidadeTemp()" type="button" >Converter</button>
+            <p >Resultado</p>
+           <p class="P-resultado-temp" id="P-resultado-temp" placeholder="0.00"></p>
+          </div>
+          </div>
+
+          <div class="comprimento">
+            <p class="titulo-comprimento">Comprimento</p>
+             <p class="selecionar-comprimento">Selecione a unidade de comprimento</p>
+              <div class="botoes-comp">
+                <select class="select-comp" name="select" id="select-comp">
+                <option value="metros">Metros(m)</option>
+                <option value="pes">Pés(ft)</option>
+                </select> 
+                <input class="input-valor" id="input-valor-comp" placeholder="Valor">
+            <button onclick="calcularUnidadeComp()" type="button" class="botaoConverter">Converter</button>
+            <p class="resultado">Resultado</p>
+            <p class="P-resultado-comp" id="P-resultado"></p>
+          </div>
+          </div>
+
+          <div class="peso">
+            <p class="titulo-peso">Peso</p>
+             <p class="selecionar-peso">Selecione a unidade de peso</p>
+               <div class="botoes-peso">
+                <select class="select-peso" name="select" id="select-peso">
+                <option value="quilograma">Quilograma(kg)</option>
+                <option value="libra">libra(lb)</option>
+                </select> 
+                <input class="input-valor-peso" id="input-valor-peso" placeholder="Valor">
+            <button onclick="calcularUnidadePeso()" type="button" class="botaoConverter">Converter</button>
+            <p class="resultado">Resultado</p>
+            <p class="P-resultado-peso" id="P-resultado-peso"></p>
+          </div>
+          </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
